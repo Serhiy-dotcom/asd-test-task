@@ -1,0 +1,48 @@
+.app-panel {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 20px;
+	background-color: rgba(190, 190, 190, 0.5);
+	align-items: center;
+}
+
+.app-panel img {
+	height: 50px;
+	margin: 8px 10px;
+	cursor: pointer;
+	transition: transform 0.2s linear;
+	transform-origin: bottom;
+	transform: scale(1);
+}
+
+.app-panel img:hover {
+	transform: scale(1.2);
+}
+
+.app-panel span {
+	height: 50px;
+	background-color: #2b2424;
+	width: 1px;
+}
+
+@media (max-width: 454px) {
+	.app-panel {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.app-panel img:hover {
+		transform: scale(1);
+	}
+
+	.app-panel img:last-child {
+		margin: 8px 14px;
+	}
+
+	.app-panel span {
+		display: none;
+	}
+}

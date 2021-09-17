@@ -1,0 +1,9 @@
+.main {
+	width: 100vw;
+	height: 100vh;
+	background: url("https://wallpaperaccess.com/full/366398.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	transition: all 0.2s linear;
+}

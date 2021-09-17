@@ -1,0 +1,79 @@
+.window-header {
+	background-color: #fff;
+	padding: 10px;
+	border-bottom: 2px solid lightgray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-btns {
+	display: flex;
+	justify-content: space-between;
+	width: 40px;
+	float: left;
+}
+
+.header-btns span {
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+}
+
+.header-btns span:nth-child(1) {
+	background-color: #ef6251;
+}
+
+.header-btns span:nth-child(2) {
+	background-color: #d3a033;
+}
+
+.header-btns span:nth-child(3) {
+	background-color: #d6d5d4;
+}
+
+.window-header h5 {
+	font-family: "Arial", sans-serif;
+	font-size: 12px;
+	color: #544c4c;
+	margin-right: -50px;
+}
+
+.header-search {
+	position: relative;
+}
+
+.header-search .fas.fa-search {
+	position: absolute;
+	left: 6px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 13px;
+	color: gray;
+}
+
+.header-search input {
+	text-indent: 20px; /*Свойство text-indent определяет размер отступа (пустого места) перед строкой в текстовом блоке.*/
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	padding: 2px 5px;
+	max-width: 125px;
+	outline-style: none;
+}
+
+.header-search input::placeholder {
+	color: lightslategray;
+}
+
+@media (max-width: 876px) {
+	.window-header h5 {
+		display: none;
+	}
+}
+
+@media (max-width: 376px) {
+	.header-search {
+		display: none;
+	}
+}

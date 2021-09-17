@@ -1,0 +1,35 @@
+.gallery-window {
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	width: 45%;
+	overflow: hidden;
+	border-radius: 7px;
+	max-width: 500px;
+	background-color: #f0efee;
+	transition: all 0.4s linear;
+}
+
+.gallery-inner-container {
+	background-color: #e8e8e7;
+	height: 350px;
+	margin: 20px 10px 10px;
+	border-radius: 5px;
+	position: relative;
+}
+
+@media (max-width: 426px) {
+	.gallery-window {
+		width: 55%;
+	}
+
+	.gallery-inner-container {
+		height: 280px;
+	}
+}
+
+@media (max-width: 376px) {
+	.gallery-inner-container {
+		height: 270px;
+	}
+}
